@@ -1,0 +1,30 @@
+{
+  "lead": "在这组 ICML 2024 的 20 篇样本中，四篇工作与 Transformer/LLM 高效推理直接相关，分别关注低比特表示、注意力计算和外部工具交互时的资源利用。优先阅读 FrameQuant 与 CHAI，再按自己的部署瓶颈查看另外两篇。",
+  "themes": [
+    {
+      "topic_id": "quant",
+      "text": "FrameQuant 在 Fusion Frame 表示中进行低比特量化。阅读时重点核查额外表示开销、精度变化，以及目标硬件上的实际推理收益。",
+      "paper_ids": ["pmlr:235:adepu24a"]
+    },
+    {
+      "topic_id": "attention",
+      "text": "CHAI 利用运行时注意力头相关性减少冗余；LeaPformer 用动态比例重加权，使线性化 Transformer 适用于目标长度未知的自回归任务。两者分别适合检查运行时缓存与注意力结构的成本。",
+      "paper_ids": ["pmlr:235:agarwal24a", "pmlr:235:agostinelli-iii24a"]
+    },
+    {
+      "topic_id": "systems",
+      "text": "InferCept 处理外部工具交互造成的生成拦截和上下文重算。可重点阅读资源恢复策略、并发请求与外部调用时延对系统利用率的影响。",
+      "paper_ids": ["pmlr:235:abhyankar24a"]
+    }
+  ],
+  "attendance_questions": [
+    {
+      "paper_id": "pmlr:235:adepu24a",
+      "questions": ["Fusion Frame 表示及额外元数据的实际存储成本如何计入？", "在目标硬件上，量化表示如何转换为端到端推理收益？"]
+    },
+    {
+      "paper_id": "pmlr:235:agarwal24a",
+      "questions": ["运行时头聚类的额外计算如何计入延迟？", "不同输入长度与批量下，KV cache 节约和头相关性是否稳定？"]
+    }
+  ]
+}

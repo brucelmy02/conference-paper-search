@@ -1,0 +1,4 @@
+interface:
+  display_name: "会议论文筛选"
+  short_description: "根据个人或课题组研究兴趣筛选会议论文，生成参会清单和会后方向总结"
+  default_prompt: "使用 $conference-paper-search，按我的研究兴趣筛选指定会议论文，并给出原文依据。"

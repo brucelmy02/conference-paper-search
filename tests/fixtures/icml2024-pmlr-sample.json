@@ -1,0 +1,470 @@
+{
+  "conference": "International Conference on Machine Learning",
+  "year": 2024,
+  "track": "main",
+  "source_url": "https://proceedings.mlr.press/v235/",
+  "retrieved_at": "2026-10-14T14:54:57.936188+00:00",
+  "scope_note": "Scope: PMLR volume 235 only. Parsed 2610 unique paper links from 2610 list records; retrieved 20 detail records. track=main denotes this conference proceedings volume, not verified technical subtracks. Other volumes, workshops, late updates and on-site attendance are not covered; list parsing alone does not prove coverage of the entire conference. --limit 20: first-N sample in official list order; not a full-conference relevance sample.",
+  "papers": [
+    {
+      "id": "pmlr:235:abad-rocamora24a",
+      "title": "Revisiting Character-level Adversarial Attacks for Language Models",
+      "authors": [
+        "Elias Abad Rocamora",
+        "Yongtao Wu",
+        "Fanghui Liu",
+        "Grigorios Chrysos",
+        "Volkan Cevher"
+      ],
+      "abstract": "Adversarial attacks in Natural Language Processing apply perturbations in the character or token levels. Token-level attacks, gaining prominence for their use of gradient-based methods, are susceptible to altering sentence semantics, leading to invalid adversarial examples. While character-level attacks easily maintain semantics, they have received less attention as they cannot easily adopt popular gradient-based methods, and are thought to be easy to defend. Challenging these beliefs, we introduce Charmer, an efficient query-based adversarial attack capable of achieving high attack success rate (ASR) while generating highly similar adversarial examples. Our method successfully targets both small (BERT) and large (Llama 2) models. Specifically, on BERT with SST-2, Charmer improves the ASR in $4.84$% points and the USE similarity in $8$% points with respect to the previous art. Our implementation is available in https://github.com/LIONS-EPFL/Charmer.",
+      "url": "https://proceedings.mlr.press/v235/abad-rocamora24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/abad-rocamora24a/abad-rocamora24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Adversarial attacks in Natural Language Processing apply perturbations in the character or token levels. Token-level attacks, gaining prominence for their use of gradient-based methods, are susceptible to altering sentence semantics, leading to invalid adversarial examples. While character-level attacks easily maintain semantics, they have received less attention as they cannot easily adopt popular gradient-based methods, and are thought to be easy to defend. Challenging these beliefs, we introduce Charmer, an efficient query-based adversarial attack capable of achieving high attack success rate (ASR) while generating highly similar adversarial examples. Our method successfully targets both small (BERT) and large (Llama 2) models. Specifically, on BERT with SST-2, Charmer improves the ASR in $4.84$% points and the USE similarity in $8$% points with respect to the previous art. Our implementation is available in https://github.com/LIONS-EPFL/Charmer.",
+          "url": "https://proceedings.mlr.press/v235/abad-rocamora24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:abe24a",
+      "title": "Adaptively Perturbed Mirror Descent for Learning in Games",
+      "authors": [
+        "Kenshi Abe",
+        "Kaito Ariu",
+        "Mitsuki Sakamoto",
+        "Atsushi Iwasaki"
+      ],
+      "abstract": "This paper proposes a payoff perturbation technique for the Mirror Descent (MD) algorithm in games where the gradient of the payoff functions is monotone in the strategy profile space, potentially containing additive noise. The optimistic family of learning algorithms, exemplified by optimistic MD, successfully achieves last-iterate convergence in scenarios devoid of noise, leading the dynamics to a Nash equilibrium. A recent re-emerging trend underscores the promise of the perturbation approach, where payoff functions are perturbed based on the distance from an anchoring, or slingshot, strategy. In response, we propose Adaptively Perturbed MD (APMD), which adjusts the magnitude of the perturbation by repeatedly updating the slingshot strategy at a predefined interval. This innovation empowers us to find a Nash equilibrium of the underlying game with guaranteed rates. Empirical demonstrations affirm that our algorithm exhibits significantly accelerated convergence.",
+      "url": "https://proceedings.mlr.press/v235/abe24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/abe24a/abe24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "This paper proposes a payoff perturbation technique for the Mirror Descent (MD) algorithm in games where the gradient of the payoff functions is monotone in the strategy profile space, potentially containing additive noise. The optimistic family of learning algorithms, exemplified by optimistic MD, successfully achieves last-iterate convergence in scenarios devoid of noise, leading the dynamics to a Nash equilibrium. A recent re-emerging trend underscores the promise of the perturbation approach, where payoff functions are perturbed based on the distance from an anchoring, or slingshot, strategy. In response, we propose Adaptively Perturbed MD (APMD), which adjusts the magnitude of the perturbation by repeatedly updating the slingshot strategy at a predefined interval. This innovation empowers us to find a Nash equilibrium of the underlying game with guaranteed rates. Empirical demonstrations affirm that our algorithm exhibits significantly accelerated convergence.",
+          "url": "https://proceedings.mlr.press/v235/abe24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:abhyankar24a",
+      "title": "InferCept: Efficient Intercept Support for Augmented Large Language Model Inference",
+      "authors": [
+        "Reyna Abhyankar",
+        "Zijian He",
+        "Vikranth Srivatsa",
+        "Hao Zhang",
+        "Yiying Zhang"
+      ],
+      "abstract": "Large language models are increasingly integrated with external environments, tools, and agents like ChatGPT plugins to extend their capability beyond language-centric tasks. However, today’s LLM inference systems are designed for standalone LLMs. They treat each external interaction as the end of LLM generation and form a new request when the interaction finishes, causing unnecessary recomputation of already computed contexts, which accounts for 37-40% of total model forwarding time. This paper presents InferCept, the first LLM inference framework targeting augmented LLMs and supporting the efficient interception of LLM generation. InferCept minimizes the GPU resource waste caused by LLM interceptions and dedicates saved memory for serving more requests.InferCept improves the overall serving throughput by 1.6x-2x and completes 2x more requests per second compared to the state-of-the-art LLM inference systems.",
+      "url": "https://proceedings.mlr.press/v235/abhyankar24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/abhyankar24a/abhyankar24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Large language models are increasingly integrated with external environments, tools, and agents like ChatGPT plugins to extend their capability beyond language-centric tasks. However, today’s LLM inference systems are designed for standalone LLMs. They treat each external interaction as the end of LLM generation and form a new request when the interaction finishes, causing unnecessary recomputation of already computed contexts, which accounts for 37-40% of total model forwarding time. This paper presents InferCept, the first LLM inference framework targeting augmented LLMs and supporting the efficient interception of LLM generation. InferCept minimizes the GPU resource waste caused by LLM interceptions and dedicates saved memory for serving more requests.InferCept improves the overall serving throughput by 1.6x-2x and completes 2x more requests per second compared to the state-of-the-art LLM inference systems.",
+          "url": "https://proceedings.mlr.press/v235/abhyankar24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:acharya24a",
+      "title": "Balancing Feature Similarity and Label Variability for Optimal Size-Aware One-shot Subset Selection",
+      "authors": [
+        "Abhinab Acharya",
+        "Dayou Yu",
+        "Qi Yu",
+        "Xumin Liu"
+      ],
+      "abstract": "Subset or core-set selection offers a data-efficient way for training deep learning models. One-shot subset selection poses additional challenges as subset selection is only performed once and full set data become unavailable after the selection. However, most existing methods tend to choose either diverse or difficult data samples, which fail to faithfully represent the joint data distribution that is comprised of both feature and label information. The selection is also performed independently from the subset size, which plays an essential role in choosing what types of samples. To address this critical gap, we propose to conduct Feature similarity and Label variability Balanced One-shot Subset Selection (BOSS), aiming to construct an optimal size-aware subset for data-efficient deep learning. We show that a novel balanced core-set loss bound theoretically justifies the need to simultaneously consider both diversity and difficulty to form an optimal subset. It also reveals how the subset size influences the bound. We further connect the inaccessible bound to a practical surrogate target which is tailored to subset sizes and varying levels of overall difficulty. We design a novel Beta-scoring importance function to delicately control the optimal balance of diversity and difficulty. Comprehensive experiments conducted on both synthetic and real data justify the important theoretical properties and demonstrate the superior performance of BOSS as compared with the competitive baselines.",
+      "url": "https://proceedings.mlr.press/v235/acharya24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/acharya24a/acharya24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Subset or core-set selection offers a data-efficient way for training deep learning models. One-shot subset selection poses additional challenges as subset selection is only performed once and full set data become unavailable after the selection. However, most existing methods tend to choose either diverse or difficult data samples, which fail to faithfully represent the joint data distribution that is comprised of both feature and label information. The selection is also performed independently from the subset size, which plays an essential role in choosing what types of samples. To address this critical gap, we propose to conduct Feature similarity and Label variability Balanced One-shot Subset Selection (BOSS), aiming to construct an optimal size-aware subset for data-efficient deep learning. We show that a novel balanced core-set loss bound theoretically justifies the need to simultaneously consider both diversity and difficulty to form an optimal subset. It also reveals how the subset size influences the bound. We further connect the inaccessible bound to a practical surrogate target which is tailored to subset sizes and varying levels of overall difficulty. We design a novel Beta-scoring importance function to delicately control the optimal balance of diversity and difficulty. Comprehensive experiments conducted on both synthetic and real data justify the important theoretical properties and demonstrate the superior performance of BOSS as compared with the competitive baselines.",
+          "url": "https://proceedings.mlr.press/v235/acharya24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:achituve24a",
+      "title": "Bayesian Uncertainty for Gradient Aggregation in Multi-Task Learning",
+      "authors": [
+        "Idan Achituve",
+        "Idit Diamant",
+        "Arnon Netzer",
+        "Gal Chechik",
+        "Ethan Fetaya"
+      ],
+      "abstract": "As machine learning becomes more prominent there is a growing demand to perform several inference tasks in parallel. Multi-task learning (MTL) addresses this challenge by learning a single model that solves several tasks simultaneously and efficiently. Often optimizing MTL models entails first computing the gradient of the loss for each task, and then aggregating all the gradients to obtain a combined update direction. However, common methods following this approach do not consider an important aspect, the sensitivity in the dimensions of the gradients. Some dimensions may be more lenient for changes while others may be more restrictive. Here, we introduce a novel gradient aggregation procedure using Bayesian inference. We place a probability distribution over the task-specific parameters, which in turn induce a distribution over the gradients of the tasks. This valuable information allows us to quantify the uncertainty associated with each of the gradients’ dimensions which is factored in when aggregating them. We empirically demonstrate the benefits of our approach in a variety of datasets, achieving state-of-the-art performance.",
+      "url": "https://proceedings.mlr.press/v235/achituve24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/achituve24a/achituve24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "As machine learning becomes more prominent there is a growing demand to perform several inference tasks in parallel. Multi-task learning (MTL) addresses this challenge by learning a single model that solves several tasks simultaneously and efficiently. Often optimizing MTL models entails first computing the gradient of the loss for each task, and then aggregating all the gradients to obtain a combined update direction. However, common methods following this approach do not consider an important aspect, the sensitivity in the dimensions of the gradients. Some dimensions may be more lenient for changes while others may be more restrictive. Here, we introduce a novel gradient aggregation procedure using Bayesian inference. We place a probability distribution over the task-specific parameters, which in turn induce a distribution over the gradients of the tasks. This valuable information allows us to quantify the uncertainty associated with each of the gradients’ dimensions which is factored in when aggregating them. We empirically demonstrate the benefits of our approach in a variety of datasets, achieving state-of-the-art performance.",
+          "url": "https://proceedings.mlr.press/v235/achituve24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:achtibat24a",
+      "title": "AttnLRP: Attention-Aware Layer-Wise Relevance Propagation for Transformers",
+      "authors": [
+        "Reduan Achtibat",
+        "Sayed Mohammad Vakilzadeh Hatefi",
+        "Maximilian Dreyer",
+        "Aakriti Jain",
+        "Thomas Wiegand",
+        "Sebastian Lapuschkin",
+        "Wojciech Samek"
+      ],
+      "abstract": "Large Language Models are prone to biased predictions and hallucinations, underlining the paramount importance of understanding their model-internal reasoning process. However, achieving faithful attributions for the entirety of a black-box transformer model and maintaining computational efficiency is an unsolved challenge. By extending the Layer-wise Relevance Propagation attribution method to handle attention layers, we address these challenges effectively. While partial solutions exist, our method is the first to faithfully and holistically attribute not only input but also latent representations of transformer models with the computational efficiency similar to a single backward pass. Through extensive evaluations against existing methods on LLaMa 2, Mixtral 8x7b, Flan-T5 and vision transformer architectures, we demonstrate that our proposed approach surpasses alternative methods in terms of faithfulness and enables the understanding of latent representations, opening up the door for concept-based explanations. We provide an LRP library at https://github.com/rachtibat/LRP-eXplains-Transformers.",
+      "url": "https://proceedings.mlr.press/v235/achtibat24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/achtibat24a/achtibat24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Large Language Models are prone to biased predictions and hallucinations, underlining the paramount importance of understanding their model-internal reasoning process. However, achieving faithful attributions for the entirety of a black-box transformer model and maintaining computational efficiency is an unsolved challenge. By extending the Layer-wise Relevance Propagation attribution method to handle attention layers, we address these challenges effectively. While partial solutions exist, our method is the first to faithfully and holistically attribute not only input but also latent representations of transformer models with the computational efficiency similar to a single backward pass. Through extensive evaluations against existing methods on LLaMa 2, Mixtral 8x7b, Flan-T5 and vision transformer architectures, we demonstrate that our proposed approach surpasses alternative methods in terms of faithfulness and enables the understanding of latent representations, opening up the door for concept-based explanations. We provide an LRP library at https://github.com/rachtibat/LRP-eXplains-Transformers.",
+          "url": "https://proceedings.mlr.press/v235/achtibat24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:adcock24a",
+      "title": "A Unified Framework for Learning with Nonlinear Model Classes from Arbitrary Linear Samples",
+      "authors": [
+        "Ben Adcock",
+        "Juan M. Cardenas",
+        "Nick Dexter"
+      ],
+      "abstract": "This work considers the fundamental problem of learning an unknown object from training data using a given model class. We introduce a framework that allows for objects in arbitrary Hilbert spaces, general types of (random) linear measurements as training data and general types of nonlinear model classes. We establish a series of learning guarantees for this framework, which provide explicit relations between the amount of training data and the model class to ensure near-best generalization bounds. In doing so, we introduce the key notion of the variation of a model class with respect to a distribution of sampling operators. We show that this framework can accommodate many different types of well-known problems of interest, such as matrix sketching by random sampling, compressed sensing with isotropic vectors, active learning in regression and compressed sensing with generative models. In all cases, known results become straightforward corollaries of our general theory. Hence, this work provides a powerful framework for studying and analyzing many different types of learning problems.",
+      "url": "https://proceedings.mlr.press/v235/adcock24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/adcock24a/adcock24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "This work considers the fundamental problem of learning an unknown object from training data using a given model class. We introduce a framework that allows for objects in arbitrary Hilbert spaces, general types of (random) linear measurements as training data and general types of nonlinear model classes. We establish a series of learning guarantees for this framework, which provide explicit relations between the amount of training data and the model class to ensure near-best generalization bounds. In doing so, we introduce the key notion of the variation of a model class with respect to a distribution of sampling operators. We show that this framework can accommodate many different types of well-known problems of interest, such as matrix sketching by random sampling, compressed sensing with isotropic vectors, active learning in regression and compressed sensing with generative models. In all cases, known results become straightforward corollaries of our general theory. Hence, this work provides a powerful framework for studying and analyzing many different types of learning problems.",
+          "url": "https://proceedings.mlr.press/v235/adcock24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:adepu24a",
+      "title": "FrameQuant: Flexible Low-Bit Quantization for Transformers",
+      "authors": [
+        "Harshavardhan Adepu",
+        "Zhanpeng Zeng",
+        "Li Zhang",
+        "Vikas Singh"
+      ],
+      "abstract": "Transformers are the backbone of powerful foundation models for many Vision and Natural Language Processing tasks. But their compute and memory/storage footprint is large, and so, serving such models is expensive often requiring high-end hardware. To mitigate this difficulty, Post-Training Quantization seeks to modify a pre-trained model and quantize it to eight bits or lower, significantly boosting compute/memory/latency efficiency. Such models have been successfully quantized to four bits with some performance loss. In this work, we outline a simple scheme to quantize Transformer-based models to just two bits (plus some overhead) with only a small drop in accuracy. Key to our formulation is a concept borrowed from Harmonic analysis called Fusion Frames. Our main finding is that the quantization must take place not in the original weight space, but instead in the Fusion Frame representations. If quantization is interpreted as the addition of noise, our casting of the problem allows invoking an extensive body of known consistent recovery and noise robustness guarantees. Further, if desired, de-noising filters are known in closed form. We show empirically, via a variety of experiments, that (almost) two-bit quantization for Transformer models promises sizable efficiency gains. The code is available at https://github.com/vsingh-group/FrameQuant",
+      "url": "https://proceedings.mlr.press/v235/adepu24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/adepu24a/adepu24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Transformers are the backbone of powerful foundation models for many Vision and Natural Language Processing tasks. But their compute and memory/storage footprint is large, and so, serving such models is expensive often requiring high-end hardware. To mitigate this difficulty, Post-Training Quantization seeks to modify a pre-trained model and quantize it to eight bits or lower, significantly boosting compute/memory/latency efficiency. Such models have been successfully quantized to four bits with some performance loss. In this work, we outline a simple scheme to quantize Transformer-based models to just two bits (plus some overhead) with only a small drop in accuracy. Key to our formulation is a concept borrowed from Harmonic analysis called Fusion Frames. Our main finding is that the quantization must take place not in the original weight space, but instead in the Fusion Frame representations. If quantization is interpreted as the addition of noise, our casting of the problem allows invoking an extensive body of known consistent recovery and noise robustness guarantees. Further, if desired, de-noising filters are known in closed form. We show empirically, via a variety of experiments, that (almost) two-bit quantization for Transformer models promises sizable efficiency gains. The code is available at https://github.com/vsingh-group/FrameQuant",
+          "url": "https://proceedings.mlr.press/v235/adepu24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:adhikary24a",
+      "title": "BeigeMaps: Behavioral Eigenmaps for Reinforcement Learning from Images",
+      "authors": [
+        "Sandesh Adhikary",
+        "Anqi Li",
+        "Byron Boots"
+      ],
+      "abstract": "Training reinforcement learning (RL) agents directly from high-dimensional image observations continues to be a challenging problem. Recent line of work on behavioral distances proposes to learn representations that encode behavioral similarities quantified by the bisimulation metric. By learning an isometric mapping to a lower dimensional space that preserves this metric, such methods attempt to learn representations that group together functionally similar states. However, such an isometric mapping may not exist, making the learning objective ill-defined. We propose an alternative objective that allows distortions in long-range distances, while preserving local metric structure – inducing representations that highlight natural clusters in the state space. This leads to new representations, which we term Behavioral Eigenmaps (BeigeMaps), corresponding to the eigenfunctions of similarity kernels induced by behavioral distances. We empirically demonstrate that when added as a drop-in modification, BeigeMaps improve the policy performance of prior behavioral distance based RL algorithms.",
+      "url": "https://proceedings.mlr.press/v235/adhikary24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/adhikary24a/adhikary24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Training reinforcement learning (RL) agents directly from high-dimensional image observations continues to be a challenging problem. Recent line of work on behavioral distances proposes to learn representations that encode behavioral similarities quantified by the bisimulation metric. By learning an isometric mapping to a lower dimensional space that preserves this metric, such methods attempt to learn representations that group together functionally similar states. However, such an isometric mapping may not exist, making the learning objective ill-defined. We propose an alternative objective that allows distortions in long-range distances, while preserving local metric structure – inducing representations that highlight natural clusters in the state space. This leads to new representations, which we term Behavioral Eigenmaps (BeigeMaps), corresponding to the eigenfunctions of similarity kernels induced by behavioral distances. We empirically demonstrate that when added as a drop-in modification, BeigeMaps improve the policy performance of prior behavioral distance based RL algorithms.",
+          "url": "https://proceedings.mlr.press/v235/adhikary24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:adila24a",
+      "title": "Discovering Bias in Latent Space: An Unsupervised Debiasing Approach",
+      "authors": [
+        "Dyah Adila",
+        "Shuai Zhang",
+        "Boran Han",
+        "Bernie Wang"
+      ],
+      "abstract": "The question-answering (QA) capabilities of foundation models are highly sensitive to prompt variations, rendering their performance susceptible to superficial, non-meaning-altering changes. This vulnerability often stems from the model’s preference or bias towards specific input characteristics, such as option position or superficial image features in multi-modal settings. We propose to rectify this bias directly in the model’s internal representation. Our approach, SteerFair, finds the bias direction in the model’s representation space and steers activation values away from it during inference. Specifically, we exploit the observation that bias often adheres to simple association rules, such as the spurious association between the first option and correctness likelihood. Next, we construct demonstrations of these rules from unlabeled samples and use them to identify the bias directions. We empirically show that SteerFair significantly reduces instruction-tuned model performance variance across prompt modifications on three benchmark tasks. Remarkably, our approach surpasses a supervised baseline with 100 labels by an average of 10.86% accuracy points and 12.95 score points and matches the performance with 500 labels.",
+      "url": "https://proceedings.mlr.press/v235/adila24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/adila24a/adila24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "The question-answering (QA) capabilities of foundation models are highly sensitive to prompt variations, rendering their performance susceptible to superficial, non-meaning-altering changes. This vulnerability often stems from the model’s preference or bias towards specific input characteristics, such as option position or superficial image features in multi-modal settings. We propose to rectify this bias directly in the model’s internal representation. Our approach, SteerFair, finds the bias direction in the model’s representation space and steers activation values away from it during inference. Specifically, we exploit the observation that bias often adheres to simple association rules, such as the spurious association between the first option and correctness likelihood. Next, we construct demonstrations of these rules from unlabeled samples and use them to identify the bias directions. We empirically show that SteerFair significantly reduces instruction-tuned model performance variance across prompt modifications on three benchmark tasks. Remarkably, our approach surpasses a supervised baseline with 100 labels by an average of 10.86% accuracy points and 12.95 score points and matches the performance with 500 labels.",
+          "url": "https://proceedings.mlr.press/v235/adila24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:afshani24a",
+      "title": "Optimal Coresets for Low-Dimensional Geometric Median",
+      "authors": [
+        "Peyman Afshani",
+        "Chris Schwiegelshohn"
+      ],
+      "abstract": "We investigate coresets for approximating the cost with respect to median queries. In this problem, we are given a set of points $P\\subset \\mathbb{R}^d$ and median queries are $\\sum_{p\\in P} ||p-c||$ for any point $c\\in \\mathbb{R}^d$. Our goal is to compute a small weighted summary $S\\subset P$ such that the cost of any median query is approximated within a multiplicative $(1\\pm\\varepsilon)$ factor. We provide matching upper and lower bounds on the number of points contained in $S$ of the order $\\tilde{\\Theta}\\left(\\varepsilon^{-d/(d+1)}\\right)$.",
+      "url": "https://proceedings.mlr.press/v235/afshani24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/afshani24a/afshani24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "We investigate coresets for approximating the cost with respect to median queries. In this problem, we are given a set of points $P\\subset \\mathbb{R}^d$ and median queries are $\\sum_{p\\in P} ||p-c||$ for any point $c\\in \\mathbb{R}^d$. Our goal is to compute a small weighted summary $S\\subset P$ such that the cost of any median query is approximated within a multiplicative $(1\\pm\\varepsilon)$ factor. We provide matching upper and lower bounds on the number of points contained in $S$ of the order $\\tilde{\\Theta}\\left(\\varepsilon^{-d/(d+1)}\\right)$.",
+          "url": "https://proceedings.mlr.press/v235/afshani24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:afzal24a",
+      "title": "REST: Efficient and Accelerated EEG Seizure Analysis through Residual State Updates",
+      "authors": [
+        "Arshia Afzal",
+        "Grigorios Chrysos",
+        "Volkan Cevher",
+        "Mahsa Shoaran"
+      ],
+      "abstract": "EEG-based seizure detection models face challenges in terms of inference speed and memory efficiency, limiting their real-time implementation in clinical devices. This paper introduces a novel graph-based residual state update mechanism (REST) for real-time EEG signal analysis in applications such as epileptic seizure detection. By leveraging a combination of graph neural networks and recurrent structures, REST efficiently captures both non-Euclidean geometry and temporal dependencies within EEG data. Our model demonstrates high accuracy in both seizure detection and classification tasks. Notably, REST achieves a remarkable 9-fold acceleration in inference speed compared to state-of-the-art models, while simultaneously demanding substantially less memory than the smallest model employed for this task. These attributes position REST as a promising candidate for real-time implementation in clinical devices, such as Responsive Neurostimulation or seizure alert systems.",
+      "url": "https://proceedings.mlr.press/v235/afzal24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/afzal24a/afzal24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "EEG-based seizure detection models face challenges in terms of inference speed and memory efficiency, limiting their real-time implementation in clinical devices. This paper introduces a novel graph-based residual state update mechanism (REST) for real-time EEG signal analysis in applications such as epileptic seizure detection. By leveraging a combination of graph neural networks and recurrent structures, REST efficiently captures both non-Euclidean geometry and temporal dependencies within EEG data. Our model demonstrates high accuracy in both seizure detection and classification tasks. Notably, REST achieves a remarkable 9-fold acceleration in inference speed compared to state-of-the-art models, while simultaneously demanding substantially less memory than the smallest model employed for this task. These attributes position REST as a promising candidate for real-time implementation in clinical devices, such as Responsive Neurostimulation or seizure alert systems.",
+          "url": "https://proceedings.mlr.press/v235/afzal24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:agarwal24a",
+      "title": "CHAI: Clustered Head Attention for Efficient LLM Inference",
+      "authors": [
+        "Saurabh Agarwal",
+        "Bilge Acun",
+        "Basil Hosmer",
+        "Mostafa Elhoushi",
+        "Yejin Lee",
+        "Shivaram Venkataraman",
+        "Dimitris Papailiopoulos",
+        "Carole-Jean Wu"
+      ],
+      "abstract": "Large Language Models (LLMs) with hundreds of billions of parameters have transformed the field of machine learning. However, serving these models at inference time is both compute and memory intensive, where a single request can require multiple GPUs and tens of Gigabytes of memory. Multi-head attention is one of the key components of LLMs, which can for over 50% of LLMs memory and compute requirement. We observe that there is a high amount of redundancy across heads on which tokens they pay attention to. Based on this insight, we propose Clustered HeadAttention ( CHAI ). CHAI combines heads with a high amount of correlation for self-attention at runtime, thus reducing both memory and compute. In our experiments, we show that CHAI is able to reduce the memory requirements for storing K,V cache by up to 21.4% and inference time latency by up to 1.73× without any fine-tuning required. CHAI achieves this with a maximum 3.2% deviation in accuracy across 3 different models (i.e. OPT-66B, LLAMA-7B, LLAMA-33B) and 5 different evaluation datasets.",
+      "url": "https://proceedings.mlr.press/v235/agarwal24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/agarwal24a/agarwal24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Large Language Models (LLMs) with hundreds of billions of parameters have transformed the field of machine learning. However, serving these models at inference time is both compute and memory intensive, where a single request can require multiple GPUs and tens of Gigabytes of memory. Multi-head attention is one of the key components of LLMs, which can for over 50% of LLMs memory and compute requirement. We observe that there is a high amount of redundancy across heads on which tokens they pay attention to. Based on this insight, we propose Clustered HeadAttention ( CHAI ). CHAI combines heads with a high amount of correlation for self-attention at runtime, thus reducing both memory and compute. In our experiments, we show that CHAI is able to reduce the memory requirements for storing K,V cache by up to 21.4% and inference time latency by up to 1.73× without any fine-tuning required. CHAI achieves this with a maximum 3.2% deviation in accuracy across 3 different models (i.e. OPT-66B, LLAMA-7B, LLAMA-33B) and 5 different evaluation datasets.",
+          "url": "https://proceedings.mlr.press/v235/agarwal24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:agarwal24b",
+      "title": "Learning to Play Atari in a World of Tokens",
+      "authors": [
+        "Pranav Agarwal",
+        "Sheldon Andrews",
+        "Samira Ebrahimi Kahou"
+      ],
+      "abstract": "Model-based reinforcement learning agents utilizing transformers have shown improved sample efficiency due to their ability to model extended context, resulting in more accurate world models. However, for complex reasoning and planning tasks, these methods primarily rely on continuous representations. This complicates modeling of discrete properties of the real world such as disjoint object classes between which interpolation is not plausible. In this work, we introduce discrete abstract representations for transformer-based learning (DART), a sample-efficient method utilizing discrete representations for modeling both the world and learning behavior. We incorporate a transformer-decoder for auto-regressive world modeling and a transformer-encoder for learning behavior by attending to task-relevant cues in the discrete representation of the world model. For handling partial observability, we aggregate information from past time steps as memory tokens. DART outperforms previous state-of-the-art methods that do not use look-ahead search on the Atari 100k sample efficiency benchmark with a median human-normalized score of 0.790 and beats humans in 9 out of 26 games. We release our code at https://pranaval.github.io/DART/.",
+      "url": "https://proceedings.mlr.press/v235/agarwal24b.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/agarwal24b/agarwal24b.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Model-based reinforcement learning agents utilizing transformers have shown improved sample efficiency due to their ability to model extended context, resulting in more accurate world models. However, for complex reasoning and planning tasks, these methods primarily rely on continuous representations. This complicates modeling of discrete properties of the real world such as disjoint object classes between which interpolation is not plausible. In this work, we introduce discrete abstract representations for transformer-based learning (DART), a sample-efficient method utilizing discrete representations for modeling both the world and learning behavior. We incorporate a transformer-decoder for auto-regressive world modeling and a transformer-encoder for learning behavior by attending to task-relevant cues in the discrete representation of the world model. For handling partial observability, we aggregate information from past time steps as memory tokens. DART outperforms previous state-of-the-art methods that do not use look-ahead search on the Atari 100k sample efficiency benchmark with a median human-normalized score of 0.790 and beats humans in 9 out of 26 games. We release our code at https://pranaval.github.io/DART/.",
+          "url": "https://proceedings.mlr.press/v235/agarwal24b.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:agarwal24c",
+      "title": "Probabilistic Generating Circuits - Demystified",
+      "authors": [
+        "Sanyam Agarwal",
+        "Markus Bläser"
+      ],
+      "abstract": "Zhang et al. (ICML 2021, PLMR 139, pp. 12447–12457) introduced probabilistic generating circuits (PGCs) as a probabilistic model to unify probabilistic circuits (PCs) and determinantal point processes (DPPs). At a first glance, PGCs store a distribution in a very different way, they compute the probability generating polynomial instead of the probability mass function and it seems that this is the main reason why PGCs are more powerful than PCs or DPPs. However, PGCs also allow for negative weights, whereas classical PCs assume that all weights are nonnegative. One main insight of this work is that the negative weights are the cause for the power of PGCs and not the different representation. PGCs are PCs in disguise: we show how to transform any PGC on binary variables into a PC with negative weights with only polynomial blowup. PGCs were defined by Zhang et al. only for binary random variables. As our second main result, we show that there is a good reason for this: we prove that PGCs for categorical variables with larger image size do not support tractable marginalization unless NP=P. On the other hand, we show that we can model categorical variables with larger image size as PC with negative weights computing set-multilinear polynomials. These allow for tractable marginalization. In this sense, PCs with negative weights strictly subsume PGCs.",
+      "url": "https://proceedings.mlr.press/v235/agarwal24c.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/agarwal24c/agarwal24c.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Zhang et al. (ICML 2021, PLMR 139, pp. 12447–12457) introduced probabilistic generating circuits (PGCs) as a probabilistic model to unify probabilistic circuits (PCs) and determinantal point processes (DPPs). At a first glance, PGCs store a distribution in a very different way, they compute the probability generating polynomial instead of the probability mass function and it seems that this is the main reason why PGCs are more powerful than PCs or DPPs. However, PGCs also allow for negative weights, whereas classical PCs assume that all weights are nonnegative. One main insight of this work is that the negative weights are the cause for the power of PGCs and not the different representation. PGCs are PCs in disguise: we show how to transform any PGC on binary variables into a PC with negative weights with only polynomial blowup. PGCs were defined by Zhang et al. only for binary random variables. As our second main result, we show that there is a good reason for this: we prove that PGCs for categorical variables with larger image size do not support tractable marginalization unless NP=P. On the other hand, we show that we can model categorical variables with larger image size as PC with negative weights computing set-multilinear polynomials. These allow for tractable marginalization. In this sense, PCs with negative weights strictly subsume PGCs.",
+          "url": "https://proceedings.mlr.press/v235/agarwal24c.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:agarwal24d",
+      "title": "Improved Differentially Private and Lazy Online Convex Optimization: Lower Regret without Smoothness Requirements",
+      "authors": [
+        "Naman Agarwal",
+        "Satyen Kale",
+        "Karan Singh",
+        "Abhradeep Guha Thakurta"
+      ],
+      "abstract": "We design differentially private regret-minimizing algorithms in the online convex optimization (OCO) framework. Unlike recent results, our algorithms and analyses do not require smoothness, thus yielding the first private regret bounds with an optimal leading-order term for non-smooth loss functions. Additionally, even for smooth losses, the resulting regret guarantees improve upon previous results in terms their dependence of dimension. Our results provide the best known rates for DP-OCO in all practical regimes of the privacy parameter, barring when it is exceptionally small. The principal innovation in our algorithm design is the use of sampling from strongly log-concave densities which satisfy the Log-Sobolev Inequality. The resulting concentration of measure allows us to obtain a better trade-off for the dimension factors than prior work, leading to improved results. Following previous works on DP-OCO, the proposed algorithm explicitly limits the number of switches via rejection sampling. Thus, independently of privacy constraints, the algorithm also provides improved results for online convex optimization with a switching budget.",
+      "url": "https://proceedings.mlr.press/v235/agarwal24d.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/agarwal24d/agarwal24d.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "We design differentially private regret-minimizing algorithms in the online convex optimization (OCO) framework. Unlike recent results, our algorithms and analyses do not require smoothness, thus yielding the first private regret bounds with an optimal leading-order term for non-smooth loss functions. Additionally, even for smooth losses, the resulting regret guarantees improve upon previous results in terms their dependence of dimension. Our results provide the best known rates for DP-OCO in all practical regimes of the privacy parameter, barring when it is exceptionally small. The principal innovation in our algorithm design is the use of sampling from strongly log-concave densities which satisfy the Log-Sobolev Inequality. The resulting concentration of measure allows us to obtain a better trade-off for the dimension factors than prior work, leading to improved results. Following previous works on DP-OCO, the proposed algorithm explicitly limits the number of switches via rejection sampling. Thus, independently of privacy constraints, the algorithm also provides improved results for online convex optimization with a switching budget.",
+          "url": "https://proceedings.mlr.press/v235/agarwal24d.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:agarwal24e",
+      "title": "The Non-linear $F$-Design and Applications to Interactive Learning",
+      "authors": [
+        "Alekh Agarwal",
+        "Jian Qian",
+        "Alexander Rakhlin",
+        "Tong Zhang"
+      ],
+      "abstract": "We propose a generalization of the classical G-optimal design concept to non-linear function classes. The criterion, termed F -design, coincides with G-design in the linear case. We compute the value of the optimal design, termed the F-condition number, for several non-linear function classes. We further provide algorithms to construct designs with a bounded F -condition number. Finally, we employ the F-design in a variety of interactive machine learning tasks, where the design is naturally useful for data collection or exploration. We show that in four diverse settings of confidence band construction, contextual bandits, model-free reinforcement learning, and active learning, F-design can be combined with existing approaches in a black-box manner to yield state-of-the-art results in known problem settings as well as to generalize to novel ones.",
+      "url": "https://proceedings.mlr.press/v235/agarwal24e.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/agarwal24e/agarwal24e.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "We propose a generalization of the classical G-optimal design concept to non-linear function classes. The criterion, termed F -design, coincides with G-design in the linear case. We compute the value of the optimal design, termed the F-condition number, for several non-linear function classes. We further provide algorithms to construct designs with a bounded F -condition number. Finally, we employ the F-design in a variety of interactive machine learning tasks, where the design is naturally useful for data collection or exploration. We show that in four diverse settings of confidence band construction, contextual bandits, model-free reinforcement learning, and active learning, F-design can be combined with existing approaches in a black-box manner to yield state-of-the-art results in known problem settings as well as to generalize to novel ones.",
+          "url": "https://proceedings.mlr.press/v235/agarwal24e.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:agnihotri24a",
+      "title": "ACPO: A Policy Optimization Algorithm for Average MDPs with Constraints",
+      "authors": [
+        "Akhil Agnihotri",
+        "Rahul Jain",
+        "Haipeng Luo"
+      ],
+      "abstract": "Reinforcement Learning (RL) for constrained MDPs (CMDPs) is an increasingly important problem for various applications. Often, the average criterion is more suitable than the discounted criterion. Yet, RL for average-CMDPs (ACMDPs) remains a challenging problem. Algorithms designed for discounted constrained RL problems often do not perform well for the average CMDP setting. In this paper, we introduce a new policy optimization with function approximation algorithm for constrained MDPs with the average criterion. The Average-Constrained Policy Optimization (ACPO) algorithm is inspired by trust region-based policy optimization algorithms. We develop basic sensitivity theory for average CMDPs, and then use the corresponding bounds in the design of the algorithm. We provide theoretical guarantees on its performance, and through extensive experimental work in various challenging OpenAI Gym environments, show its superior empirical performance when compared to other state-of-the-art algorithms adapted for the ACMDPs.",
+      "url": "https://proceedings.mlr.press/v235/agnihotri24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/agnihotri24a/agnihotri24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "Reinforcement Learning (RL) for constrained MDPs (CMDPs) is an increasingly important problem for various applications. Often, the average criterion is more suitable than the discounted criterion. Yet, RL for average-CMDPs (ACMDPs) remains a challenging problem. Algorithms designed for discounted constrained RL problems often do not perform well for the average CMDP setting. In this paper, we introduce a new policy optimization with function approximation algorithm for constrained MDPs with the average criterion. The Average-Constrained Policy Optimization (ACPO) algorithm is inspired by trust region-based policy optimization algorithms. We develop basic sensitivity theory for average CMDPs, and then use the corresponding bounds in the design of the algorithm. We provide theoretical guarantees on its performance, and through extensive experimental work in various challenging OpenAI Gym environments, show its superior empirical performance when compared to other state-of-the-art algorithms adapted for the ACMDPs.",
+          "url": "https://proceedings.mlr.press/v235/agnihotri24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:agnihotri24b",
+      "title": "CosPGD: an efficient white-box adversarial attack for pixel-wise prediction tasks",
+      "authors": [
+        "Shashank Agnihotri",
+        "Steffen Jung",
+        "Margret Keuper"
+      ],
+      "abstract": "While neural networks allow highly accurate predictions in many tasks, their lack of robustness towards even slight input perturbations often hampers their deployment. Adversarial attacks such as the seminal projected gradient descent (PGD) offer an effective means to evaluate a model’s robustness and dedicated solutions have been proposed for attacks on semantic segmentation or optical flow estimation. While they attempt to increase the attack’s efficiency, a further objective is to balance its effect, so that it acts on the entire image domain instead of isolated point-wise predictions. This often comes at the cost of optimization stability and thus efficiency. Here, we propose CosPGD, an attack that encourages more balanced errors over the entire image domain while increasing the attack’s overall efficiency. To this end, CosPGD leverages a simple alignment score computed from any pixel-wise prediction and its target to scale the loss in a smooth and fully differentiable way. It leads to efficient evaluations of a model’s robustness for semantic segmentation as well as regression models (such as optical flow, disparity estimation, or image restoration), and it allows it to outperform the previous SotA attack on semantic segmentation. We provide code for the CosPGD algorithm and example usage at https://github.com/shashankskagnihotri/cospgd.",
+      "url": "https://proceedings.mlr.press/v235/agnihotri24b.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/agnihotri24b/agnihotri24b.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "While neural networks allow highly accurate predictions in many tasks, their lack of robustness towards even slight input perturbations often hampers their deployment. Adversarial attacks such as the seminal projected gradient descent (PGD) offer an effective means to evaluate a model’s robustness and dedicated solutions have been proposed for attacks on semantic segmentation or optical flow estimation. While they attempt to increase the attack’s efficiency, a further objective is to balance its effect, so that it acts on the entire image domain instead of isolated point-wise predictions. This often comes at the cost of optimization stability and thus efficiency. Here, we propose CosPGD, an attack that encourages more balanced errors over the entire image domain while increasing the attack’s overall efficiency. To this end, CosPGD leverages a simple alignment score computed from any pixel-wise prediction and its target to scale the loss in a smooth and fully differentiable way. It leads to efficient evaluations of a model’s robustness for semantic segmentation as well as regression models (such as optical flow, disparity estimation, or image restoration), and it allows it to outperform the previous SotA attack on semantic segmentation. We provide code for the CosPGD algorithm and example usage at https://github.com/shashankskagnihotri/cospgd.",
+          "url": "https://proceedings.mlr.press/v235/agnihotri24b.html",
+          "locator": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "pmlr:235:agostinelli-iii24a",
+      "title": "LeaPformer: Enabling Linear Transformers for Autoregressive and Simultaneous Tasks via Learned Proportions",
+      "authors": [
+        "Victor Agostinelli Iii",
+        "Sanghyun Hong",
+        "Lizhong Chen"
+      ],
+      "abstract": "A promising approach to preserving model performance in linearized transformers is to employ position-based re-weighting functions. However, state-of-the-art re-weighting functions rely heavily on target sequence lengths, making it difficult or impossible to apply them to autoregressive and simultaneous tasks, where the target and sometimes even the input sequence length are unknown. To address this issue, we propose Learned Proportions (LeaP) and LeaPformers. Our contribution is built on two major components. First, we generalize the dependence on explicit positional representations and sequence lengths into dependence on sequence proportions for re-weighting. Second, we replace static positional representations with dynamic proportions derived via a compact module, enabling more flexible attention concentration patterns. We evaluate LeaPformer against eight representative efficient transformers on the Long-Range Arena benchmark, where we show that LeaPformer achieves the best quality-throughput trade-off, as well as apply LeaPformer to Wikitext-103b autoregressive language modeling and simultaneous speech-to-text translation for two language pairs, achieving competitive results in both tasks.",
+      "url": "https://proceedings.mlr.press/v235/agostinelli-iii24a.html",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v235/main/assets/agostinelli-iii24a/agostinelli-iii24a.pdf",
+      "acceptance": "accepted",
+      "sources": [
+        {
+          "id": "abstract",
+          "kind": "abstract",
+          "text": "A promising approach to preserving model performance in linearized transformers is to employ position-based re-weighting functions. However, state-of-the-art re-weighting functions rely heavily on target sequence lengths, making it difficult or impossible to apply them to autoregressive and simultaneous tasks, where the target and sometimes even the input sequence length are unknown. To address this issue, we propose Learned Proportions (LeaP) and LeaPformers. Our contribution is built on two major components. First, we generalize the dependence on explicit positional representations and sequence lengths into dependence on sequence proportions for re-weighting. Second, we replace static positional representations with dynamic proportions derived via a compact module, enabling more flexible attention concentration patterns. We evaluate LeaPformer against eight representative efficient transformers on the Long-Range Arena benchmark, where we show that LeaPformer achieves the best quality-throughput trade-off, as well as apply LeaPformer to Wikitext-103b autoregressive language modeling and simultaneous speech-to-text translation for two language pairs, achieving competitive results in both tasks.",
+          "url": "https://proceedings.mlr.press/v235/agostinelli-iii24a.html",
+          "locator": "Abstract"
+        }
+      ]
+    }
+  ]
+}

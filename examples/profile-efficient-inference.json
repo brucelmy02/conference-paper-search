@@ -1,0 +1,19 @@
+{
+  "owner": "personal",
+  "topics": [
+    {
+      "id": "efficient-inference",
+      "problem": "降低 Transformer 与大语言模型推理的计算和内存成本",
+      "focus": ["低比特量化", "注意力计算", "推理系统优化"],
+      "constraints": [],
+      "exclude": ["仅关注模型训练优化、没有推理价值的工作"],
+      "relation_scope": ["direct", "method_transfer", "adjacent"],
+      "priority": "primary",
+      "provenance": [
+        {"kind": "user", "reference": "行为测试中的模拟用户明确描述"}
+      ]
+    }
+  ],
+  "representative_papers": [],
+  "notes": "示例兴趣用于测试，不代表本项目用户的实际研究方向。"
+}

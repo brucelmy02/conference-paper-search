@@ -1,0 +1,17 @@
+{
+  "total_papers": 20,
+  "duplicates_removed": 0,
+  "scope_status": "unknown",
+  "scope_note": "Scope: PMLR volume 235 only. Parsed 2610 unique paper links from 2610 list records; retrieved 20 detail records. track=main denotes this conference proceedings volume, not verified technical subtracks. Other volumes, workshops, late updates and on-site attendance are not covered; list parsing alone does not prove coverage of the entire conference. --limit 20: first-N sample in official list order; not a full-conference relevance sample.",
+  "missing_abstract": 0,
+  "title_only": 0,
+  "acceptance": {
+    "accepted": 20
+  },
+  "processed": 20,
+  "unprocessed": 0,
+  "included": 4,
+  "excluded": 16,
+  "pending": 0,
+  "limited_evidence": 0
+}

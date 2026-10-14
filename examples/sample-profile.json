@@ -1,0 +1,88 @@
+{
+  "owner": "personal",
+  "topics": [
+    {
+      "id": "quant",
+      "problem": "以量化降低 Transformer/大语言模型推理的计算与内存成本",
+      "focus": [
+        "低比特量化",
+        "部署成本",
+        "精度与效率的权衡"
+      ],
+      "constraints": [
+        "方法须有明确推理价值"
+      ],
+      "exclude": [
+        "仅优化训练、没有推理价值的工作暂不关注"
+      ],
+      "relation_scope": [
+        "direct",
+        "method_transfer",
+        "adjacent"
+      ],
+      "priority": "primary",
+      "provenance": [
+        {
+          "kind": "user",
+          "reference": "我想了解所给 ICML 2024 样本中降低 Transformer/大语言模型推理计算与内存成本的论文，关注量化、注意力计算和推理系统；仅优化训练、没有推理价值的工作暂不关注。请生成参会精选（最多2篇）和会后方向总结。"
+        }
+      ]
+    },
+    {
+      "id": "attention",
+      "problem": "以高效注意力降低 Transformer/大语言模型推理的计算与内存成本",
+      "focus": [
+        "注意力计算",
+        "KV cache",
+        "自回归推理"
+      ],
+      "constraints": [
+        "方法须有明确推理价值"
+      ],
+      "exclude": [
+        "仅优化训练、没有推理价值的工作暂不关注"
+      ],
+      "relation_scope": [
+        "direct",
+        "method_transfer",
+        "adjacent"
+      ],
+      "priority": "primary",
+      "provenance": [
+        {
+          "kind": "user",
+          "reference": "我想了解所给 ICML 2024 样本中降低 Transformer/大语言模型推理计算与内存成本的论文，关注量化、注意力计算和推理系统；仅优化训练、没有推理价值的工作暂不关注。请生成参会精选（最多2篇）和会后方向总结。"
+        }
+      ]
+    },
+    {
+      "id": "systems",
+      "problem": "以推理系统降低 Transformer/大语言模型推理的计算与内存成本",
+      "focus": [
+        "重复计算",
+        "GPU资源",
+        "服务吞吐"
+      ],
+      "constraints": [
+        "方法须有明确推理价值"
+      ],
+      "exclude": [
+        "仅优化训练、没有推理价值的工作暂不关注"
+      ],
+      "relation_scope": [
+        "direct",
+        "method_transfer",
+        "adjacent"
+      ],
+      "priority": "primary",
+      "provenance": [
+        {
+          "kind": "user",
+          "reference": "我想了解所给 ICML 2024 样本中降低 Transformer/大语言模型推理计算与内存成本的论文，关注量化、注意力计算和推理系统；仅优化训练、没有推理价值的工作暂不关注。请生成参会精选（最多2篇）和会后方向总结。"
+        }
+      ]
+    }
+  ],
+  "representative_papers": [],
+  "notes": "按用户明确需求划分三个同等主要方向。KV cache、精度效率权衡、重复计算和服务吞吐是对关注维度的操作性解释，可修改；未推断个人发表背景。未指定关联范围，直接相关优先，并考虑有具体机制支持的可迁移方法。"
+}

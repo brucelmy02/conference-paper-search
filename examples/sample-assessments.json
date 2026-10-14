@@ -1,0 +1,421 @@
+{
+  "assessments": [
+    {
+      "paper_id": "pmlr:235:abad-rocamora24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "研究目标是字符级对抗攻击的成功率及语义保持；查询高效指攻击过程，并非降低模型正常推理的计算或内存成本。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "we introduce Charmer, an efficient query-based adversarial attack"
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:abe24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "研究博弈中的镜像下降与Nash均衡收敛；摘要支持优化算法目标，未给出Transformer/LLM推理成本问题或具体可迁移推理机制。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "find a Nash equilibrium of the underlying game with guaranteed rates"
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:abhyankar24a",
+      "decision": "include",
+      "relevance": "high",
+      "relation": "direct",
+      "topic_ids": [
+        "systems"
+      ],
+      "reason": "工具或外部环境交互把LLM生成切成多个请求时，会重新计算已有上下文。InferCept针对截断和恢复过程减少GPU资源浪费，并把节约的内存用于服务更多请求，直接对应推理系统成本。",
+      "reading_focus": "优先查阅生成拦截与恢复协议、上下文复用和GPU内存管理；随后核对外部调用时延、并发负载及吞吐实验设置。",
+      "differences": [
+        "面向工具或代理增强的LLM，价值来自交互中断后的资源利用；与权重量化、注意力头合并对应不同开销。"
+      ],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "InferCept minimizes the GPU resource waste caused by LLM interceptions and dedicates saved memory for serving more requests."
+        }
+      ],
+      "uncertainties": [
+        "仅阅读摘要；资源管理机制与吞吐结论尚未核对正文。",
+        "普通连续生成任务的收益尚不明确。",
+        "现场展示、时间、地点和作者到场均未核实。"
+      ],
+      "evidence_status": "sufficient",
+      "priority": 2
+    },
+    {
+      "paper_id": "pmlr:235:acharya24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "BOSS选择训练数据子集，目标是数据高效训练；摘要不讨论Transformer/LLM推理成本，落在用户暂不关注的训练优化边界。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "Subset or core-set selection offers a data-efficient way for training deep learning models."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:achituve24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "主要贡献是多任务训练中的梯度聚合。摘要中的Bayesian inference表示概率推断，用来度量梯度不确定性；不能据此当作LLM部署推理优化。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "introduce a novel gradient aggregation procedure using Bayesian inference."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:achtibat24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "AttnLRP让Transformer归因解释更高效且覆盖attention层；优化的是模型解释计算，其摘要未将目标设为降低生成推理的计算或内存成本。",
+      "reading_focus": "",
+      "differences": [
+        "attention和computational efficiency两类词都出现，但研究问题是归因解释。"
+      ],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "By extending the Layer-wise Relevance Propagation attribution method to handle attention layers"
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:adcock24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "研究从线性样本学习未知对象的一般保证与泛化界；压缩感知和sketching在此服务学习问题，摘要没有具体Transformer/LLM推理迁移机制。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "We establish a series of learning guarantees for this framework"
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:adepu24a",
+      "decision": "include",
+      "relevance": "high",
+      "relation": "direct",
+      "topic_ids": [
+        "quant"
+      ],
+      "reason": "FrameQuant明确以Transformer服务的计算和内存成本为问题，采用训练后量化，并在Fusion Frame表示中进行近两比特量化。与用户的量化和部署效率兴趣直接匹配。",
+      "reading_focus": "优先阅读Fusion Frame表示与量化过程，检查额外表示开销、精度损失和部署时算子实现；重点区分模型压缩、显存节约与真实推理加速。",
+      "differences": [
+        "通过低比特参数表示减少开销，与CHAI在运行时减少attention头的冗余不同。",
+        "摘要明确保留额外开销，不能将两比特直接当作实际端到端内存比例。"
+      ],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "quantize Transformer-based models to just two bits (plus some overhead)"
+        }
+      ],
+      "uncertainties": [
+        "仅阅读摘要；实际额外存储、算子开销和端到端延迟尚需正文核对。",
+        "不同Transformer任务和大规模LLM中的精度权衡尚未核对。",
+        "现场展示、时间、地点和作者到场均未核实。"
+      ],
+      "evidence_status": "sufficient",
+      "priority": 1
+    },
+    {
+      "paper_id": "pmlr:235:adhikary24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "BeigeMaps改进图像观测强化学习的状态表示和策略效果；摘要目标为RL表示学习，未给出Transformer/LLM推理成本目标。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "BeigeMaps improve the policy performance of prior behavioral distance based RL algorithms."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:adila24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "SteerFair在推理中修改激活以消除提示偏差；虽涉及推理过程，优化目标为偏差和效果稳定性，摘要不支持降低计算或内存成本。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "steers activation values away from it during inference."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:afshani24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "研究几何中位数查询的coreset大小界；计算对象为几何点集查询，没有Transformer/LLM推理方法或能直接定位的迁移机制。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "We investigate coresets for approximating the cost with respect to median queries."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:afzal24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "REST确实优化推理速度与内存，但目标为EEG临床信号上的图网络和循环结构；现有摘要不能支持与Transformer/LLM量化、attention或服务系统的具体方法关联。",
+      "reading_focus": "",
+      "differences": [
+        "未因缺少关键词而排除：其推理效率目标已识别，但目标模型和机制超出本次明确研究问题。"
+      ],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "graph-based residual state update mechanism (REST) for real-time EEG signal analysis"
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:agarwal24a",
+      "decision": "include",
+      "relevance": "high",
+      "relation": "direct",
+      "topic_ids": [
+        "attention"
+      ],
+      "reason": "CHAI识别LLM注意力头之间的相关冗余，在运行时合并头，明确同时降低attention计算与KV cache内存，直接匹配高效推理问题。",
+      "reading_focus": "优先阅读头相关性估计、运行时聚类及KV cache组织；核查额外聚类成本、输入长度与批量变化，以及各模型精度和延迟测量。",
+      "differences": [
+        "以运行时注意力冗余为切入点，不要求先微调；与FrameQuant的参数表示压缩和LeaPformer的线性attention设计不同。"
+      ],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "correlation for self-attention at runtime, thus reducing both memory and compute."
+        }
+      ],
+      "uncertainties": [
+        "仅阅读摘要；报告的缓存和延迟收益尚未核对正文实验条件。",
+        "不同序列长度和负载下的聚类成本及精度变化仍待核查。",
+        "现场展示、时间、地点和作者到场均未核实。"
+      ],
+      "evidence_status": "sufficient",
+      "priority": 1
+    },
+    {
+      "paper_id": "pmlr:235:agarwal24b",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "DART用离散表示和Transformer改善Atari强化学习的样本效率；摘要中的memory tokens用于部分可观测状态记忆，未构成LLM推理内存节约机制。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "a sample-efficient method utilizing discrete representations for modeling both the world and learning behavior."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:agarwal24c",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "分析概率生成电路与概率电路的表达能力和边缘化复杂度；虽有可计算推断目标，但不是Transformer/LLM attention或推理系统，未提供具体可迁移方法。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "PGCs are PCs in disguise: we show how to transform any PGC on binary variables into a PC with negative weights with only polynomial blowup."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:agarwal24d",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "目标是差分隐私在线凸优化的regret与切换预算；摘要不涉及Transformer/LLM部署推理的计算或内存机制。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "We design differentially private regret-minimizing algorithms in the online convex optimization (OCO) framework."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:agarwal24e",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "F-design服务交互学习中的数据采集与探索；非线性实验设计理论未在摘要中给出Transformer/LLM推理成本关联。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "the design is naturally useful for data collection or exploration."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:agnihotri24a",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "ACPO优化有约束平均MDP策略，贡献为强化学习算法及其保证；摘要没有Transformer/LLM推理计算或内存成本问题。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "a new policy optimization with function approximation algorithm for constrained MDPs with the average criterion."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:agnihotri24b",
+      "decision": "exclude",
+      "relevance": "low",
+      "relation": null,
+      "topic_ids": [],
+      "reason": "CosPGD改善像素级预测任务的白盒对抗攻击与鲁棒性评估效率；攻击计算效率并非模型正常推理的计算或内存降低。",
+      "reading_focus": "",
+      "differences": [],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "CosPGD, an attack that encourages more balanced errors over the entire image domain while increasing the attack’s overall efficiency."
+        }
+      ],
+      "uncertainties": [],
+      "evidence_status": "sufficient",
+      "priority": 3
+    },
+    {
+      "paper_id": "pmlr:235:agostinelli-iii24a",
+      "decision": "include",
+      "relevance": "medium",
+      "relation": "direct",
+      "topic_ids": [
+        "attention"
+      ],
+      "reason": "LeaPformer解决线性化Transformer的重加权函数依赖目标序列长度，妨碍自回归与同步任务的问题。其动态比例机制使高效attention能用于长度未知的推理场景；摘要明确包含自回归语言建模验证。",
+      "reading_focus": "优先查阅线性attention重加权及动态比例模块，检查自回归增量计算是否可缓存；核查吞吐指标的测量条件和部署相对标准Transformer的开销。",
+      "differences": [
+        "属于attention架构设计，可在训练后服务自回归任务；用户排除的是没有推理价值的训练优化，并不排除需训练的新架构。",
+        "摘要中的语言建模规模不能外推为大规模LLM部署实测；与CHAI的运行时头合并不同。"
+      ],
+      "evidence": [
+        {
+          "source_id": "abstract",
+          "quote": "dynamic proportions derived via a compact module, enabling more flexible attention concentration patterns."
+        }
+      ],
+      "uncertainties": [
+        "仅阅读摘要；自回归实验中的推理吞吐和内存收益需正文核对。",
+        "大规模预训练LLM的适配、权重复用及硬件实现尚未确认。"
+      ],
+      "evidence_status": "sufficient",
+      "priority": 2
+    }
+  ]
+}
